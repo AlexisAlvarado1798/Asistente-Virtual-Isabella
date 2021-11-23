@@ -1,0 +1,32 @@
+<p>socketnotification-management works!</p>
+
+<div>
+  <input type="text" pInputText [(ngModel)]="input"/>
+  <p-button label="Click" (click)="sendMessage()"></p-button>
+</div>
+
+<!--div>
+  <mat-form-field appearance="fill">
+    <mat-label>Message</mat-label>
+    <input matInput value="Disco party!" #message>
+  </mat-form-field>
+  <button mat-stroked-button (click)="openSnackBar(message.value)">Show snack-bar</button>
+</div-->
+
+
+<!--
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container"
+     *ngFor="let msg of socketnotification.msg">
+  <span> {{msg}}</span>
+  <p-button (click)="toggle()">Cerrar</p-button>
+</div>
+-->
+<!--
+<nav>
+  <button (click)="toggle()">Toggle Open/Close</button>
+</nav>
+
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+-->

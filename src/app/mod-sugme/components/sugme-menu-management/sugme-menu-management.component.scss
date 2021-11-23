@@ -1,0 +1,11 @@
+.sugme-menu {
+  display: flex;
+  &_slide {
+    flex: 1;
+    margin-right: 5px;
+  }
+
+  &_card {
+    flex: 2;
+  }
+}

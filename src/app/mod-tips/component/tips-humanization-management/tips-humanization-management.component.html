@@ -1,0 +1,82 @@
+<div class="card-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Crear Tip</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <div style="display: flex; margin-top: 20px">
+        <div class="container-input">
+          <label for="code">Codigo:</label>
+          <input id="code" type="text" pInputText [(ngModel)]="tips.code"/>
+          <label for="description">Descripcion:</label>
+          <textarea id="description" pInputTextarea [autoResize]="true"
+                    [(ngModel)]="tips.description"></textarea>
+        </div>
+        <div class="container-cron" style="flex: 1">
+          <p-fieldset legend="Cronograma">
+            <div class="p-field-checkbox-dropdown">
+              <p-checkbox [value]="true" label="Lunes"
+                          [(ngModel)]="days.monday"
+                          class="container-cron_check"
+              ></p-checkbox>
+              <p-checkbox [value]="true" label="Martes"
+                          [(ngModel)]="days.tuesday"
+                          class="container-cron_check"
+              ></p-checkbox>
+              <p-checkbox [value]="true" label="Miercoles"
+                          [(ngModel)]="days.wednesday"
+                          class="container-cron_check"
+              ></p-checkbox>
+              <p-checkbox [value]="true" label="Jueves"
+                          [(ngModel)]="days.thursday"
+                          class="container-cron_check"
+              ></p-checkbox>
+              <p-checkbox [value]="true" label="Viernes"
+                          [(ngModel)]="days.friday"
+                          class="container-cron_check"
+              ></p-checkbox>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+              <label for="timeonly">Time Only: </label>
+              <p-calendar [(ngModel)]="time" [timeOnly]="true" id="timeonly" inputId="timeonly"></p-calendar>
+            </div>
+          </p-fieldset>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions style="text-align: end;">
+      <p-button label="Guardar"
+                (click)="onClickSave()"
+      ></p-button>
+      <p-button label="Cancelar"
+                (click)="onClickSave()"
+                styleClass="p-button-danger"
+      ></p-button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div *ngIf="msgs">
+  <div class="container-messages-tips">
+    <p-messages severity="error"
+                class="messages-tips">
+      <ng-template pTemplate>
+        <div style="flex: 1">
+          <span>{{msgs}}</span>
+        </div>
+        <div>
+          <button pButton pRipple type="button" label="Cerrar"
+                  class="p-button-text" (click)="onCloseMessage()"
+          ></button>
+        </div>
+      </ng-template>
+    </p-messages>
+  </div>
+</div>
+
+
+
+
+
+

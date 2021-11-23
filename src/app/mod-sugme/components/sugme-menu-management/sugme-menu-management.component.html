@@ -1,0 +1,20 @@
+<div class="sugme-menu">
+  <div class="sugme-menu_slide">
+    <!--button-- #btn type="button" pButton icon="pi pi-list" label="Show"
+            (click)="menu.toggle($event)"></button-->
+    <p-slideMenu #menu [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" [model]="model"
+                 backLabel="Atras" [popup]= "true"
+    ></p-slideMenu>
+  </div>
+
+  <div class="sugme-menu_card">
+    <p-card id="card"
+            *ngIf="showCard"
+            [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+      {{msgs}}
+      <ng-template pTemplate="footer">
+        <p-button label="Cerrar" (onClick)="showCard = false"></p-button>
+      </ng-template>
+    </p-card>
+  </div>
+</div>

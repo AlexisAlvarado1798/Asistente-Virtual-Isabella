@@ -1,0 +1,355 @@
+<div class="card">
+  <div class="f card box shadow-8 m-3">
+    <div class="flex card-container indigo-container ">
+      <div class="flex-1 h-4rem text-center p-4 border-round">
+        Asistente Para Humanizar los Servicios de Salud
+        <div style="position:absolute; top:0; left:0;" id="unity-container-Bubble" (click)="onAction()" cdkDrag>
+          <canvas id="unity-canvas-bubble" style="width: 100px; height: 100px; border-radius: 50px;"></canvas>
+          <div id="unity-loading-bar-bubble"></div>
+        </div>
+      </div>
+      <div class="pt-2 pb-1">
+        <button pButton pRipple class="p-button-text" label="Inicio"
+                [routerLink]="['/home']"></button>
+        <button pButton pRipple class="p-button-text" label="Asistente"
+                [routerLink]="['/Asistente']"></button>
+        <button pButton pRipple class="p-button-text" label="Historia"
+                [routerLink]="['/history']"></button>
+        <button pButton pRipple class="p-button-text" label="Equipo"
+                [routerLink]="['/team']"></button>
+        <button pButton pRipple class="p-button-text" label="Contactanos"
+                [routerLink]="['/contact']">Hace FALTA PARAMETRIZAR
+        </button>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+  <div class="card">
+    <div class="card-container purple-container mb-4">
+      <div class="static purple-200 border-round p-8 font-bold">
+        <div id="unity-container" class="unity-desktop">
+          <canvas id="unity-canvas" width=1100 height=600></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card box shadow-5 m-3" id="inicio">
+    <div class="card-container indigo-container">
+      <div class="text-gray-800 font-bold text-center border-round p-4">
+        PROTOTIPO ASISTENTE DIGITAL ANIMADO CON ENFOQUE HUMANIZADO PARA LA ATENCIÓN AL
+        USUARIO DE LOS SERVICIOS DE SALUD
+        EN UNA IPS EN PIENDAMO CAUCA. 2DA FASE
+      </div>
+      <div class="block text-justify p-4 border-round">
+        El presente proyecto propone optimizar un prototipo asistente con enfoque humanizado para la atención al usuario
+        teniendo en cuenta la falta de implementación y educación de las TIC en el área de la salud, se implementara en
+        una IPS en donde además de brindar tips humanizados para una buena atención se pueda extender para generar la
+        interacción directamente con el usuario final, llevando el producto a un nivel de madurez más alto con el fin de
+        validar los
+        requerimientos esenciales y mejorar el Diseño de Interfaz dándole un impacto comercial.
+        <p-divider></p-divider>
+        Este proyecto proporciona un producto inicialmente para las instituciones prestadoras de los servicios de salud
+        con el objetivo de desarrollar un asistente con información digital que pueda agendar citas a los usuarios con
+        enfoque humanizado, inteligente y eficiente, dando utilidad a los recursos tecnológicos de los que disponen las
+        IPSs para aprovecharlos al máximo proporcionándole a esta herramienta un diseño programático más amplio que
+        puede llegar a tener un impacto comercial, un diseño gráfico y una interfaz gráfica del personaje más acorde a
+        los gustos de los usuarios e implementar una forma de interacción paciente – Asistente.
+        <p-divider></p-divider>
+        <div class="text-gray-800 font-bold text-center border-round p-4">
+          Impacto economía naranja.
+        </div>
+        Esta investigación permitirá la implementación de una herramienta digital y la introducción de las industrias
+        creativas en el área de la salud, con el fin de implementar un asistente virtual de atención humanizada en las
+        IPSs y contribuir en la prestación de servicios con calidad, potencializando la competitividad institucional ya
+        que pretende que el usuario en salud obtenga la atención de una forma más interactiva en un equipo de uso
+        cotidiano dando uso del internet de las cosas.
+
+        <div class="text-gray-800 font-bold text-center border-round p-4">
+          ANTECEDENTES
+        </div>
+        Como lo menciona (Julio C. Guerrero Pupo, 2004) Debido a la acumulación del conocimiento y los avances
+        tecnológicos ocurridos en el sector de la salud, la asistencia médica ha cambiado profundamente en los últimos
+        años. Ello se debe, en gran medida, al impresionante desarrollo de la tecnología médica. La aparición de
+        algunas, imposibles de imaginar hace sólo unas décadas, han producido cambios muy significativos en la
+        configuración de los servicios de salud., por lo cual se entiende que la lucha por humanizar los servicios, no
+        contempla desacreditar ni oponernos a los avances científicos en salud, si no direccionar esas ayudas para
+        fomentar la atención humanizada.
+
+        <p>
+          Teniendo en cuenta el uso de las TICs es preciso mencionar las afirmaciones de (Velarde Hermida & Ballesteros
+          Carrasco, 2015) en un contexto general del no aprovechamiento de la ciencia y la tecnología.
+          Parece necesario no perder de vista la existencia y perpetuación de problemas y tensiones sociales en nuestras
+          sociedades, donde la ciencia y la tecnología no parecen estar siendo aprovechadas, tanto como sería deseable,
+          para mejorar su gestión y avanzar hacia su solución. El control de los ciudadanos, la reducción del
+          pensamiento
+          crítico y libre, el surgimiento de problemas identitarios o la extensión de valores intolerantes y agresivos,
+          entre otros muchos, debe hacer pensar en cómo se está orientando, desde las instituciones políticas y
+          económicas, nuestro conocimiento acumulado y nuestras tecnologías disponibles. Es necesario poner el foco en
+          la
+          voluntad política de dirigir y controlar el avance de la ciencia para ponerla, también, al servicio de los
+          ciudadanos y de sus necesidades reales.
+        </p>
+
+        <p>
+          Vale la pena mencionar que en el país se ha construido un pacto por Colombia creando la implementación del
+          plan
+          decenal de salud pública 2012 – 2021 en cumplimiento de la ley 1438 de 2011 que busca lograr la equidad en
+          salud
+          a través de garantizar el goce efectivo del derecho y mejorar las condiciones de vida de la población, este
+          proyecto de investigación se ha enmarcado con una de sus dimensiones transversales “Gestión diferencial de
+          poblaciones vulnerables” en el componente “envejecimiento y vejez” teniendo en cuenta su objetivo de
+          garantizar
+          que el sector salud provea una atención humanizada, de acuerdo con las particularidades poblacionales y
+          territoriales, y que propenda por la disminución de brechas de inequidad en el país. (Minsalud, 2012)
+          En los hallazgos preliminares de la primera etapa del proyecto de investigación, SGPS 6631 quedó evidenciado
+          que
+          los asistentes virtuales hacen parte de la vida cotidiana del hombre como usuario directo; al presentarse como
+          si tuvieran estados emocionales propios, estas tecnologías enriquecen la interacción con los humanos ya sea
+          que
+          se presenten como objetos físicos o virtuales y los profesionales de la salud buscan brindar el mejor cuidado
+          posible a sus pacientes. Esto puede ser una tarea desafiante hoy en día, con presiones aparentemente
+          contradictorias para reducir costos y mejoras la calidad al mismo tiempo. Si la industria va a superar estos
+          retos, la tecnología debe jugar un papel importante. (Soto, 2015)
+        </p>
+
+        Con los avances generados durante los últimos quince años de las TIC ́s, entrará a desempeñar un rol de marcada
+        importancia en el mundo, por esto el presente proyecto propone una nueva fase del prototipo para dar respuesta a
+        los nuevos retos impuestos por una nueva normalidad atribuida a la pandemia COVID 19, diseñando un producto más
+        robusto y adaptado a cambios en donde el usuario pueda interactuar directamente con el asistente
+        proporcionándole una atención humanizada en agendamiento de citas para las diferentes instituciones de salud en
+        donde se puede comercializar.
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card box shadow-5 m-3" id="history">
+    <div class="card-container indigo-container">
+      <div class="block text-justify p-4 border-round">
+        <p-fieldset legend="Primera Fase 2020" [toggleable]="true">
+          <p>Teniendo en cuenta que los avances realizados en el trascurso del año 2020 en la creación del prototipo nos
+            dejan productos tan importantes como el diseño del asistente y un trabajo de campo reflejado en un artículo
+            científico donde los hallazgos principales son extraídos de la interacción con usuarios de una IPS por medio
+            de un instrumento de recolección de información, en esta etapa el proyecto se enfocara en determinar las
+            características que debe cumplir un asistente digital humanizado, trasladando sus funcionalidades para la
+            atención directamente al usuario en salud permitiéndole actividades como el agendamiento de una cita con
+            atención humanizada.</p>
+          <div class="flex indigo-container">
+            <div class="text-center border-round scalein animation-duration-1000 flex align-items-center justify-content-center
+    font-bold text-white border-round m-2 px-5 py-3">1
+              <img src="assets/images/image-removebg-preview.png">
+            </div>
+            <div class="text-center border-round mx-4">2
+              <img src="assets/images/img.png">
+            </div>
+            <div class="font-bold text-center border-round">3
+              <img src="assets/images/img_1.png">
+            </div>
+          </div>
+          <p>
+            En la primera fase se desarrollo una aplicacion de escritorio el cual esta desarrollada en
+            Unity, PHP y MYSQL, consiste en modulos de comandos de voz de tal forma que reconociera
+            la entrada y la salida de texto y asi lo convertia a Voz, por otro lado se desarrollo
+            la opcion de entrada de menus donde esta toda la informacion de la Humanizacion de calidad
+            de salud.
+          </p>
+
+          <div class="flex indigo-container">
+            <div class="text-center border-round">1
+              <div class="text-gray-800 font-bold text-center border-round p-4">
+                Industrias Creativas
+              </div>
+              <p>
+                Ingeniero Asesor Guillermo
+                Desarrollador de Videojuegos
+              </p>
+              <p>
+                Desarrollador de Videojuegos
+                Ingeneniero Leider Sandoval
+              </p>
+              <p>
+                Desarrollador de Videojuegos
+                Ingeneniero Jhonatan Lemos
+              </p>
+              <p>
+                Desarrollador Web
+                Alexis Alvarado
+              </p>
+              <p>
+                Desarrollador Animacion
+                Gabriel Ramos
+              </p>
+            </div>
+            <div class="text-center border-round mx-4">2
+              <div class="text-gray-800 font-bold text-center border-round p-4">
+                Centro de Investigacion de Salud
+              </div>
+              <p>
+                Lider de Proyecto Francy Mañunga
+              </p>
+            </div>
+            <div class=" text-center p-4 border-round">3
+              <div class="text-gray-800 font-bold text-center border-round p-4">
+                Diseño Grafico
+              </div>
+              <p>
+                Ariadna Ro </p>
+            </div>
+          </div>
+        </p-fieldset>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card box shadow-5 m-3 ">
+    <div class="card-container indigo-container">
+      <div class="block text-justify p-4 border-round">
+        <p-fieldset legend="Nuestro Equipo" [toggleable]="true">
+
+          <div class="flex indigo-container">
+            <div class="text-center border-round scalein animation-duration-1000 flex align-items-center justify-content-center
+    font-bold text-white border-round m-2 px-5 py-3">1
+              <img src="assets/images/image-removebg-preview.png">
+            </div>
+            <div class="text-center border-round mx-4">2
+              <img src="assets/images/img.png">
+            </div>
+            <div class="font-bold text-center border-round">3
+              <img src="assets/images/img_1.png">
+            </div>
+          </div>
+
+
+          <div class="flex indigo-container">
+            <div class="text-center border-round">
+              <div class="text-gray-800 font-bold text-center border-round">
+                Industrias Creativas Centro de Investigacion Sinnergia
+              </div>
+              <p>
+                Ingeniero Asesor Cesar Jafardo
+              </p>
+              <p>
+                Ingeniera Flor Martinez
+              </p>
+              <p>
+                Desarrollar Web Alexis Alvarado
+              </p>
+            </div>
+            <div class="text-center border-round mx-4">
+              <div class="text-gray-800 font-bold text-center border-round ">
+                Centro de Investigacion de Salud Sennova
+              </div>
+              <p>
+                Lider de Proyecto Carmer Francy Mañunga
+              </p>
+              <p>
+                Instructora Tatiana González
+              </p>
+              <p>
+                Instructora Paola Andrade
+              </p>
+              <p>
+                Instructora Sandra Milena Enrique
+              </p>
+            </div>
+            <div class="text-center border-round mx-4">
+              <div class="text-gray-800 font-bold text-center border-round ">
+                Diseño Grafico Centro de Investigacion Sennova
+              </div>
+              <p>
+                Instructora Ariadna Rosero
+              </p>
+            </div>
+          </div>
+        </p-fieldset>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card box shadow-5 m-3 ">
+    <div class="card-container indigo-container">
+      <div class="block text-justify p-4 border-round">
+        <div class="text-gray-800 font-bold text-left border-round p-4">
+          Contactanos
+        </div>
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-6">
+            <label for="firstname6">Nombres y Apellidos</label>
+            <input id="firstname6" type="text" pInputText class="inputfield w-full">
+          </div>
+          <div class="field col-12 md:col-6">
+            <label for="email">Correo Electronico</label>
+            <input id="email" type="text" pInputText class="inputfield w-full">
+          </div>
+          <div class="field col-12">
+            <label for="message">Dejanos un Mensaje</label>
+            <textarea id="message" type="text" rows="4" pInputTextarea class="inputfield w-full"></textarea>
+          </div>
+        </div>
+
+        <button #btn type="button" class="menu-main" pButton icon="pi pi-send" (click)="onSend()"
+                label="Enviar"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-container purple-container mb-4">
+      <div class="static border-round p-4 text-gray-900">
+        <div class="static bottom-0 left-0 surface-400 text-center border-round p-4 font-bold text-800">
+          © 2021 Todos los Derechos Reservados
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<p></p>
+
+<div>
+
+  <p-sidebar [(visible)]="visibleSidebar1" position="left">
+    <h4>Menu de Opciones</h4>
+    <p-slideMenu [model]="model" backLabel="Atras"></p-slideMenu>
+    <h4>Ir a entrenamiento</h4>
+    <h4>Encuesta</h4>
+    <h4>IPS</h4>
+    <button #btn type="button" class="menu-main" pButton icon="pi pi-plus-circle" label="Crear Tips"
+            [routerLink]="['/tipsCreate']"></button>
+    <button #btn type="button" class="menu-main" pButton icon="pi pi-list" label="Lista de Tips"
+            [routerLink]="['/tipsList']"></button>
+    <button #btn type="button" class="menu-main" pButton icon="pi pi-info-circle" label="Enviar Alerta"
+            [routerLink]="['/socketNoti']"></button>
+  </p-sidebar>
+
+  <p-confirmDialog [style]="{width: '50vw'}" acceptLabel="Si" key="positionDialog" [position]="position"
+                   [baseZIndex]="10000" rejectButtonStyleClass="p-button-outlined">
+    {{msgs}}
+  </p-confirmDialog>
+
+  <div class="container-messages-tips">
+    <p-messages *ngFor="let msg of socketNotificationService.msg" severity="info"
+                class="messages-tips">
+      <ng-template pTemplate>
+        <div style="flex: 1">
+          <span>{{msg}}</span>
+        </div>
+        <div>
+          <button pButton pRipple type="button" label="Cerrar"
+                  class="p-button-text" (click)="onCloseMessage()"
+          ></button>
+        </div>
+      </ng-template>
+    </p-messages>
+  </div>
+
+  <p-toast></p-toast>
+</div>
+
+
