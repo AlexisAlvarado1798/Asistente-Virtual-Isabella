@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "La humanización siempre va a tener una estrecha relación con la ética, la moral, los valores y los principios de la ética médica.",
+      "image": "foto_funcaión_2.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "Product Description",
+      "image": "image-removebg-preview.png",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "Product Description",
+      "image": "img.png",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "Product Description",
+      "image": "foto fundación 1.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "Product Description",
+      "image": "foto fundación 3.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "Bamboo Watch",
+      "description": "Product Description",
+      "image": "fundación NPV IPS.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    }
+  ]
+}

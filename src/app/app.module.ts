@@ -12,6 +12,7 @@ import {ToastModule} from 'primeng/toast';
 import {MessageService} from 'primeng/api';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {CarouselModule} from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
     BrowserAnimationsModule,
     ToastModule,
     ScrollPanelModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    CarouselModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

@@ -5,6 +5,8 @@ import {typeMultimediaConst} from './mod-sugme/constants/type-multimedia.const';
 import {SugmeService} from './mod-sugme/services/sugme.service';
 import {SocketnotificationService} from './mod-socketnotification/services/socketnotification.service';
 import {ConfirmationService, ConfirmEventType, MessageService} from 'primeng/api';
+import {ProductService} from './productservice';
+import {Product} from './product';
 
 declare var createUnityInstance: any;
 
@@ -12,7 +14,7 @@ declare var createUnityInstance: any;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [MessageService, ConfirmationService],
+  providers: [MessageService, ConfirmationService, ProductService],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements AfterViewInit {
@@ -34,15 +36,65 @@ export class AppComponent implements AfterViewInit {
 
   position: string = '';
 
+  products: Product[] = [];
+  responsiveOptions: any[] = [];
+  responsiveOptions2: any[] = [];
+
 
   constructor(private messageService: MessageService,
               public socketNotificationService: SocketnotificationService,
               private _snackBar: MatSnackBar,
               private sugmeService: SugmeService,
-              private confirmationService: ConfirmationService) {
+              private confirmationService: ConfirmationService,
+              private productService: ProductService) {
+
+    this.responsiveOptions = [
+      {
+        breakpoint: '1024px',
+        numVisible: 3,
+        numScroll: 3
+      },
+      {
+        breakpoint: '768px',
+        numVisible: 2,
+        numScroll: 2
+      },
+      {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+      }
+    ];
+    this.responsiveOptions2 = [
+      {
+        breakpoint: '1024px',
+        numVisible: 3,
+        numScroll: 3
+      },
+      {
+        breakpoint: '768px',
+        numVisible: 2,
+        numScroll: 2
+      },
+      {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+      }
+    ];
+
+
   }
 
   async ngAfterViewInit(): Promise<void> {
+    this.productService.getProductsSmall().then(products => {
+      this.products = products;
+    });
+
+    this.productService.getFaseSmall().then(products => {
+      this.products = products;
+    });
+
     this.getSuggetionsMenu();
 
     const buildUrl = "assets/unity/Bubble-Asistente/Build";
@@ -124,7 +176,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
-  onSend(){
+  onSend() {
     this.messageService.add({
       severity: 'success', summary: 'Enviado', detail: 'Te contactaremos Pronto'
 
@@ -139,12 +191,21 @@ export class AppComponent implements AfterViewInit {
       header: 'Estas satisfecho con el Mensaje',
       icon: 'pi pi-info-circle',
       accept: () => {
-        this.messageService.add({severity: 'success', summary: 'Confirmado', detail: 'Espero te haya servido', icon: 'pi pi-heart'});
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Confirmado',
+          detail: 'Espero te haya servido',
+          icon: 'pi pi-heart'
+        });
       },
       reject: (type: any) => {
         switch (type) {
           case ConfirmEventType.REJECT:
-            this.messageService.add({severity: 'error', summary: 'Rechazada', detail: 'Estamos mejorando nuestros protocolos'});
+            this.messageService.add({
+              severity: 'error',
+              summary: 'Rechazada',
+              detail: 'Estamos mejorando nuestros protocolos'
+            });
             break;
           case ConfirmEventType.CANCEL:
             this.messageService.add({severity: 'warn', summary: 'Cancelado', detail: 'Espero que vuelvas pronto'});

@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "FASE 1",
+      "description": "El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal.",
+      "image": "foto_funcaión_2.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "FASE 2",
+      "description": "El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal.",
+      "image": "foto_funcaión_2.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "1000",
+      "code": "f230fh0g3",
+      "name": "FASE 3",
+      "description": "El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal.",
+      "image": "foto_funcaión_2.jpg",
+      "price": 65,
+      "category": "Accessories",
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+
+  ]
+}
